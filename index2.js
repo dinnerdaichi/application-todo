@@ -2,6 +2,8 @@ const form = document.getElementById('form');
 const input = document.getElementById('input');
 const ul = document.getElementById('ul');
 const cotion = document.getElementById('cotion')
+const tips = document.getElementById('tips');
+const tipsText = document.getElementById('tips-text')
 
 const todos = JSON.parse(localStorage.getItem('todos'));
 
@@ -30,7 +32,7 @@ if(todoText){
   li.innerText = todoText;
   li.classList.add('list-item');
 
-  if(todo && todo.conpleated){
+  if(todo && todo.complated){
     li.classList.add('text-line');
   }
 
@@ -74,7 +76,7 @@ function saveData(){
     let todo = {
 
       text:list.innerText,
-      conpleated:list.classList.contains('text-line')
+      complated:list.classList.contains('text-line')
 
     }
 
@@ -86,3 +88,18 @@ function saveData(){
 
 
 }
+
+
+tips.addEventListener('mouseover',function(){
+
+  tipsText.classList.add('tips-display');
+
+})
+
+tips.addEventListener('mouseleave',function(){
+
+  tipsText.classList.remove('tips-display');
+
+})
+
+

@@ -11,7 +11,7 @@ body{
 
 h1{
   width: 80%;
-  margin: 0 auto;
+  margin: 30px auto 0;
   text-align: center;
   color: rgb(144, 138, 227);
 
@@ -19,7 +19,8 @@ h1{
 
 form{
   width: 80%;
-  margin: 30px auto 10px ;
+  margin: 30px auto 0 ;
+
   
 }
 
@@ -29,6 +30,8 @@ input{
   font-size: 20px;
   box-sizing: border-box;
   border-radius: 40px;
+  border: 3px solid rgb(144, 138, 227);
+
 }
 
 ul{
@@ -40,10 +43,11 @@ ul{
 li {
   width: 100%;
   padding: 20px;
-  border: 1px solid rgb(135, 159, 203);
+  border: 1px solid rgb(144, 138, 227);
   background-color: #fff;
   font-size: 20px;
   border-radius: 40px;
+  margin-bottom: 2px;
 }
 
 .list-item{
@@ -58,16 +62,57 @@ li {
 
 .cotion{
   opacity: 0;
-  width: 80%;
   text-align-last: left;
-  margin: 0 auto 30px;
 }
 
 .display{
   opacity: 1;
-  width: 80%;
-  text-align-last: left;
-  margin: 0 auto 30px;
-  color: rgb(198, 84, 223);
+ text-align: left;
+ 
+}
 
+
+.flex {
+  color: rgb(198, 84, 223);
+  display: flex;
+  margin: 0 auto 10px;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.tips {
+  margin: 0;;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.tips-flex{
+  position: relative;
+}
+
+
+
+.tips-text  {
+
+  background-color:white;
+  width: 200px;
+  padding: 20px;
+  border-radius: 30px;
+  position: absolute;
+  top: -75px;
+  left: -200px;
+  border: 1px solid rgb(53 225 221);
+  opacity: 0;
+
+
+  p{
+    margin: 0;
+    
+
+  }
+}
+
+.tips-display{
+  opacity: 1;
 }
