@@ -1,6 +1,7 @@
 const form = document.getElementById('form');
 const input = document.getElementById('input');
 const ul = document.getElementById('ul');
+const cotion = document.getElementById('cotion')
 
 const todos = JSON.parse(localStorage.getItem('todos'));
 
@@ -49,6 +50,13 @@ saveData();
   ul.appendChild(li);
   input.value = "";
   saveData();
+
+  cotion.classList.remove('display');
+
+}else{
+
+  cotion.classList.add('display');
+
 }
 
 
@@ -75,6 +83,6 @@ function saveData(){
   })
 
   localStorage.setItem('todos',JSON.stringify(todos));
-  
+
 
 }
